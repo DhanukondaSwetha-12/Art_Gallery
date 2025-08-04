@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Famous Painters Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="task2.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Welcome Form -->
+    <section id="contact-section">
+      <h2>🎨 Welcome to the Famous Painters Gallery</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <button type="submit">Explore Gallery</button>
+      </form>
+    </section>
+
+    <!-- Painter Selection -->
+    <section id="category-section" class="hidden">
+      <h3>🖌️ Choose a Painter to Explore</h3>
+      <div class="category-options">
+        <button class="category-btn" data-category="vangogh">Van Gogh</button>
+        <button class="category-btn" data-category="monet">Claude MGG</button>
+        <button class="category-btn" data-category="picasso">Pablo Picasso</button>
+        <button class="category-btn" data-category="davinci">Leonardo da Vinci</button>
+      </div>
+    </section>
+
+    <!-- Gallery Slideshow -->
+    <section id="gallery-section" class="hidden">
+      <h3>🖼️ Masterpieces Gallery</h3>
+      <div class="slideshow-container">
+        <img id="slideshow-image" src="" alt="Artwork" />
+        <div class="slideshow-controls">
+          <button id="prevBtn">⟨ Prev</button>
+          <button id="nextBtn">Next ⟩</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="task2.js"></script>
+</body>
+</html>
